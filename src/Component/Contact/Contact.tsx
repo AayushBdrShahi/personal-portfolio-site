@@ -11,7 +11,7 @@ const Contact = () => {
     const formData = new FormData(event.target);
     
     // Simple validation check for empty fields
-    for (let [key, value] of formData.entries()) {
+    for (let [_, value] of formData.entries()) {
       if (!value) {
         alert(`Please enter all fields.`);
         return; // Stop form submission if a field is empty
