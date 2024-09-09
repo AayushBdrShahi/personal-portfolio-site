@@ -1,0 +1,168 @@
+/* Main contact container */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px; /* Reduced gap */
+  padding: 60px 100px; /* Adjust padding for a more compact look */
+  background-color: #1a1a1a; /* Dark background */
+  color: #fff; /* White text */
+}
+
+/* Contact title styling */
+.contact-title {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-title h1 {
+  padding: 0px 30px;
+  font-size: 60px; /* Adjust font size */
+  font-weight: 700; /* Make the title bold */
+  color: #fff; /* Ensure the title is white */
+  position: relative;
+}
+
+/* Contact section: left (details) and right (form) */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 100px; /* Adjust gap between the left and right sides */
+}
+
+/* Left side: contact details */
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #ff6600; /* Set the orange color for "Let's talk" */
+  margin-bottom: 20px;
+}
+
+.contact-left p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #b3b3b3; /* Light gray for paragraph text */
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Add more spacing between each contact detail row */
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center; /* Vertically center the icon and text */
+  gap: 15px; /* Space between the icon and the text */
+}
+
+.contact-detail img {
+  width: 30px; /* Adjust the size of the icons */
+  height: 30px;
+}
+
+.contact-detail p {
+  font-size: 20px;
+  color: #a0a0a0;
+  margin: 0;
+}
+
+/* Right side: form */
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form label styling */
+form label {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px; /* Add larger space between label and input */
+  display: block; /* Ensure the label takes full width */
+}
+
+/* Form input and textarea styling */
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px; /* Add spacing between fields */
+}
+
+form textarea {
+  resize: vertical;
+}
+
+/* Submit button styling */
+.contact-submit {
+  padding: 20px 60px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.contact-submit:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact {
+      padding: 30px 20px; /* Reduce padding for smaller screens */
+      gap: 40px;
+  }
+
+  .contact-title h1 {
+      font-size: 40px; /* Reduce title font size */
+  }
+
+  .contact-section {
+      flex-direction: column; /* Stack sections vertically */
+      gap: 50px;
+  }
+
+  .contact-left h1 {
+      font-size: 36px; /* Smaller heading */
+  }
+
+  .contact-left p {
+      font-size: 16px; /* Reduce font size */
+  }
+
+  .contact-detail p {
+      font-size: 18px; /* Adjust size for mobile */
+  }
+
+  form input,
+  form textarea {
+      font-size: 14px; /* Reduce input font size */
+      padding: 10px; /* Smaller padding */
+  }
+
+  .contact-submit {
+      padding: 15px 40px; /* Reduce button padding */
+      font-size: 20px;
+  }
+}

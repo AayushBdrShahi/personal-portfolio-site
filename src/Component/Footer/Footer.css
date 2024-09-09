@@ -1,0 +1,98 @@
+/* General Footer Styling */
+.footer {
+    display: flex;
+    margin: 50px 170px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-top-left {
+    font-size: 20px;
+    max-width: 400px;
+}
+
+.footer-top-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.footer-bottom-right {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footer {
+        margin: 40px 100px; /* Adjust margins on tablet */
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px; /* Space out elements vertically */
+    }
+
+    .footer-top-left {
+        max-width: 100%; /* Allow full width for text */
+        font-size: 18px; /* Reduce font size for better readability */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px; /* Add spacing between sections */
+    }
+
+    .footer-bottom-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Stack links vertically */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin: 30px 50px; /* Reduce margins on mobile */
+    }
+
+    .footer-top-left {
+        font-size: 16px; /* Reduce font size on mobile */
+    }
+
+    .footer-bottom {
+        font-size: 16px; /* Reduce bottom font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin: 20px 20px; /* Tighten margins on small screens */
+    }
+
+    .footer-top-right {
+        flex-direction: column;
+        gap: 20px; /* Stack email input and subscribe buttons vertically if re-added */
+    }
+
+    .footer-bottom-right {
+        gap: 10px; /* Reduce gap between links */
+    }
+}
